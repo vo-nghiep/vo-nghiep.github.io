@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ND STORE | TRANG CHỦ</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="search"><img src="images/Search_Icon.png" alt=""></a>
+        <input type="text" class="search1">
+        <a href="index.html"><img src="images/logo25.1.png" alt=""></a>
+        <p class="name">✌️ND STORE📱</p>
+    </header>
+    <div class="nav">
+        <a href="index.html" class="home">TRANG CHỦ</a>
+        <div class="dropdown">
+            <button class="muc">SẢN PHẨM</button>
+            <div class="drop">
+                <div class="hang">
+                    <div class="cot" id="cot1">
+                        <h3>ĐIỆN THOẠI</h3>
+                        <a href="sanpham1.html">Iphone</a>
+                        <a href="sanpham2.html">Samsung</a>
+                        <a href="sanpham3.html">Sony</a>
+                        <a href="">Nokia</a>
+                        <a href="">Oppo</a>
+                    </div>
+                    <div class="cot">
+                        <h3>PHỤ KIỆN</h3>
+                        <a href="">Tai nghe</a>
+                        <a href="">Ốp lưng</a>
+                        <a href="">Sạc dự phòng</a>
+                        <a href="">Cáp sạc</a>
+                        <a href="">Phụ kiện khác</a>
+                    </div>
+                    <div class="cot">
+                        <h3>TABLET</h3>
+                        <a href="">Ipad</a>
+                        <a href="">Samsung</a>
+                        <a href="">Huawie</a>
+                        <a href="">Xiaomi</a>
+                        <a href="">Nokia</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="tintuc.html">TIN TỨC</a>
+        <a href="muahang.html">MUA HÀNG</a>
+        <a href="lienhe.html">LIÊN HỆ</a>
+    </div>
+    <div class="banner">
+        <div class="mySlides">
+            <a href="sanpham1.html" title="Thông tin chi tiết"><img src="images/iphone13 banner.jpg"></a>
+        </div>
+        <div class="mySlides">
+            <a href="sanpham2.html" title="Thông tin chi tiết"><img src="images/samsung s221 banner.png"></a>
+        </div>
+        <div class="mySlides">
+            <a href="sanpham3.html" title="Thông tin chi tiết"><img src="images/sony-xperia-1.jpg"></a>
+        </div>
+        <a class="next" onclick="changeSlides(1)" title="Next">&#10095;</a>
+        <a class="previous" onclick="changeSlides(-1)" title="Previous">&#10094;</a>
+        <a class="stop" onclick="stop()" title="Stop">&#9724;</a>
+        <a class="play" onclick="play()" title="Play">&#9654;</a>
+    </div>
+
+    <p class="a">SẢN PHẨM NỔI BẬT</p>
+    <div class="sanpham">
+        <div class="row">
+            <a href="" class="sp">
+                <img src="images/iphone-12-pro-max1.png" alt="">
+                <b class="ten">IPHONE 12 PRO MAX - 256GB</b> <br>
+                <i class="gia">30.690.000 VNĐ</i>
+                <button class="buy">Mua</button>
+            </a>
+            <a href="sanpham3.html" class="sp">
+                <img src="images/sonyxperia1.png" alt="">
+                <b class="ten">SONY XPERIA X</b> <br>
+                <i class="gia">21.990.000 VNĐ</i>
+                <button class="buy">Mua</button>
+            </a>
+            <a href="" class="sp">
+                <img src="images/Nokia 7.2.png" alt="">
+                <b class="ten">NOKIA 7.2</b> <br>
+                <i class="gia">6.190.000 VNĐ</i>
+                <button class="buy" onclick="buy()">Mua</button>
+            </a>
+            <a href="" class="sp">
+                <img src="images/Google-Pixel-6-1-removebg.png" alt="">
+                <b class="ten">GOOGLE PIXEL 6</b> <br>
+                <i class="gia">11.990.000 VNĐ</i>
+                <button class="buy">Mua</button>
+            </a>
+        </div>
+        <div class="row">
+            <a href="sanpham2.html" class="sp">
+                <img src="images/samsung s22.png" alt="">
+                <b class="ten">SAMSUNG S22 ULTRA 512GB</b> <br>
+                <i class="gia">36.990.000 VNĐ</i>
+                <button class="buy">Mua</button>
+            </a>
+            <a href="" class="sp">
+                <img src="images/samsung a53.png" alt="">
+                <b class="ten">SAMSUNG A53 5G 128GB</b> <br>
+                <i class="gia">9.990.000 VNĐ</i>
+                <button class="buy">Mua</button>
+            </a>
+            <a href="sanpham1.html" class="sp">
+                <img src="images/ipphone 13 pro max.png" alt="">
+                <b class="ten">IPHONE 13 PRO MAX 128GB</b> <br>
+                <i class="gia">33.990.000 VNĐ</i>
+                <button class="buy">Mua</button>
+            </a>
+            <a href="" class="sp">
+                <img src="images/Reno-6-pro-5G-rz-1_ccexpress.png" alt="">
+                <b class="ten">OPPO RENO 6</b> <br>
+                <i class="gia">12.990.000 VNĐ</i>
+                <button class="buy">Mua</button>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p class="ket">
+            CỬA HÀNG SMARTPHONE ND STORE <br>
+            Tầng 5 - ND Tower - 55 Lê Thánh Tông.P.Bến Nghé.Quận 1.Tp.HCM <br>
+            Email: nghiepdvps20385@fpt.edu.vn
+        </p>
+    </footer>
+    <script>
+        showSlidesAuto();
+    </script>
+</body>
+
+</html>

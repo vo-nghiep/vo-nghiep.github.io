@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    position: relative;
+    height: 800px;
+}
+.banner{
+    width: 100%;
+    max-height: 800px;
+    position: relative;
+    /* background-image: url("/PS20385_DongVoNghiep_ASM/images/ms_banner_img3.webp");
+    background-size:100%;
+    background-repeat: no-repeat; */
+}
+.banner>img{
+    width: 100%;
+    height: 620px;
+}
+.content{
+    width: 50%;
+    min-height: 800px;
+    margin: 20px auto;
+    /* background-color: aquamarine; */
+}
+.cauhinh{
+    width: 70%;
+    margin: 0 auto;
+}
+.one{
+    font-size: 20pt;
+}
+.text{
+    
+}
+.cauhinh>img{
+    width: 100%;
+}
+.review>img{
+    width: 90%;
+    margin: 20px auto;
+}
+.two{
+    font-size: 15pt;
+}
+.three{
+    margin-top: 10px;
+}
+.len>img{
+    width: 40px;
+    height: 40px;
+}
+#back{
+    position:fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0.5;
+    display: none;
+}
