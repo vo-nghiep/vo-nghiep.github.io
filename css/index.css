@@ -4,23 +4,23 @@
 }
 .banner{
     width: 100%;
-    max-height: 800px;
+    min-height: 50vw;
     position: relative;
 }
 .mySlides>a>img{
     width: 100%;
-    height: 620px;
+    height: 40vw;
 }
 .next,.previous{
     position: absolute;
     cursor: pointer;
-    top: 50%;
+    top: 37%;
     width: auto;
-    padding: 16px;
+    padding: 20px;
     margin-top: -22px;
     color: rgb(31, 29, 29);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2vw;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -34,37 +34,32 @@
 .next:hover,
 .play:hover,
 .stop:hover{
-    background-color: rgba(169, 222, 243, 0.8);
+    background-color: rgba(245, 192, 227, 0.8);
 }
 .play,
 .stop{
     cursor: pointer;
-    position: absolute;
-    bottom: 10;
-    right: 715px;
     width: 20px;
-    opacity: 0.7;
-    font-size: 25px;
-    padding: 10px 15px;
-}
-.play{
-    left: 715px;
+    opacity: 0.6;
+    font-size: 2vw;
+    padding: 3.5px 20px;
 }
 .a{
     text-align: center;
-    font-size: 30pt;
-    margin-top: 70px;
-    margin-bottom: 20px;
+    font-size: 2vw;
+    margin-top: -5%;
+    margin-bottom: 2%;
 }
 .sanpham{
     width: 70%;
-    min-height: 750px;
+    height: 50vw;
     margin: 0 auto;
     /* background-color: blue; */
 }
 div.row{
     width: 100%;
-    height: 360px;
+    height: 50%;
+    margin-bottom: 5%;
 }
 .sp{
     /* border: 1px solid gray; */
@@ -77,8 +72,8 @@ div.row{
     margin-top: 10px;
 }
 .sp>img{
-    width: 100%;
-    height: 70%;
+    max-width: 100%;
+    max-height: 70%;
     margin: 0 auto;
     /* background-color: aqua; */
 }
@@ -89,24 +84,31 @@ div.row{
     background-color: rgb(210, 239, 252);
 }
 .ten{
+    position: absolute;
     color: cornflowerblue;
+    font-size: 1vw;
+    bottom: 20%;
+    left: 1%;
+    right: 1%;
 }
 .gia{
     position: absolute;
-    bottom: 60px;
-    left: 80px;
+    bottom: 12%;
+    left: 1%;
+    right: 1%;
+    font-size: 1vw;
 }
 .buy{
     position: absolute;
-    right: 43%;
-    bottom: 10px;
+    right: 40%;
+    bottom: 1%;
     border-radius: 5px;
-    width: 45px;
-    height: 30px;
+    width: 20%;
+    height: 9%;
     outline: none;
     box-shadow: inset -2px -2px 2px rgb(155, 154, 154);
     border: 1px solid lightgray;
-    font-size: 12pt;
+    font-size: 1vw;
 }
 .buy:hover{
     background-color: rgb(76, 235, 235);
