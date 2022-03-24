@@ -16,7 +16,7 @@
     cursor: pointer;
     top: 37%;
     width: auto;
-    padding: 20px;
+    padding: 1vw;
     margin-top: -22px;
     color: rgb(31, 29, 29);
     font-weight: bold;
@@ -112,4 +112,9 @@ div.row{
 }
 .buy:hover{
     background-color: rgb(76, 235, 235);
+}
+@media screen and (max-width: 600px) {
+    .next, .previous{
+        padding: 2vw;
+    }
 }

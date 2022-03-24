@@ -56,14 +56,18 @@
     opacity: 0.5;
     display: none;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .content{
         width: 80%;
     }
-    .cauhinh>img{
-        width: 200%;
-    }
     .anh>img{
         width: 80%;
+    }
+    .len>img{
+        width: 30px;
+        height: 30px;
+    }
+    #back{
+        right: 10px;
     }
 }
