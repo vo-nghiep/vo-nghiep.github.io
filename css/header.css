@@ -4,7 +4,7 @@
 }
 header{
     width: 100%;
-    height: 80px;
+    height: 5vw;
     /* background-image: linear-gradient(rgb(252, 215, 244),white); */
     background-image:linear-gradient(rgb(185, 233, 253),white );
     margin: 0;
@@ -13,17 +13,17 @@ header{
 .logo{
     width: 20%;
     float: left;
-    height: 80px;
+    height: 5vw;
 }
 .logo>a>img{
     float: left;
-    max-width: 100px;
+    max-width: 50%;
     max-height: 100%;
     margin-left: 20%;
 }
 .name{
     float: left;
-    line-height: 80px;
+    line-height: 5vw;
     font-size: 1.5vw;
     font-family:Cambria;
     color: rgb(27, 197, 197);
@@ -32,7 +32,7 @@ header{
 .timkiem{
     width: 35%;
     float: left;
-    height: 80px;
+    height: 5vw;
     position: relative;
     
 }
@@ -41,7 +41,7 @@ header{
     font-size: 1vw;
     width: 55%;
     height: 2vw;
-    top: 30%;
+    top: 28%;
     bottom: 30%;
     border-radius: 5px;
     outline: none;
@@ -54,19 +54,19 @@ header{
     height: 2vw;
     cursor: pointer;
     position: absolute;
-    top: 30%;
-    left: 76%;
+    top: 32%;
+    left: 77%;
 }
 .nav{
     width: 45%;
-    height: 80px;
+    height: 5vw;
     float: left;
     overflow: hidden;
     background-image:linear-gradient(rgb(185, 233, 253),white );
     font-family: Arial, Helvetica, sans-serif;
     /* border: 2px solid rgb(185, 233, 253); */
 }
-.nav a {
+.nav>a {
     font-size: 1vw;
     color: rgb(7, 148, 115);
     text-align: center;
@@ -116,12 +116,12 @@ header{
 .cot{
     float: left;
     width: 25%;
-    padding: 10px;
+    /* padding: 10px; */
     /* background-image:linear-gradient(rgb(185, 233, 253),white ); */
     height: auto;
     /* border: 1px solid black; */
-    text-align: center;
-    margin: 0 1vw;
+    /* text-align: center; */
+    margin-right: 1.5vw;
 }
 #cot1{
     margin-left: 10%;
@@ -133,7 +133,7 @@ header{
     /* background-color: rgb(185, 233, 253); */
 }
 #phone{
-    margin-left: 18%;
+    margin-left: 17vw;
 }
 .hang3{
     display: none;
@@ -142,47 +142,65 @@ header{
     text-align: center;
     color: rgb(228, 83, 39);
     font-size: 15pt;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 .mathang{
     color: rgb(241, 238, 237);
-    font-size: 20pt;
+    font-size: 2vw;
     display: inline-block;
     line-height: 65px;
     width: 25%;
     margin: 0 1vw;
-}  
+}
+.loai{
+    text-align: center;
+    padding: 4.5% 4%;
+    float: left;
+} 
 .icon{
     padding: 0.5vw;
-    width: 40%;
+    width: 30%;
     height: auto;
     text-align: center;
 }
 .cot a:hover .icon{
-    width: 44%;
+    width: 35%;
 }
 .icon1{
-    width: 18%;
-    height: 10%;
-    padding-right: 0.5vw;
+    width: 15%;
+    height: auto;
+    /* padding-right: 0.5vw; */
+    /* background-color: aqua; */
+    margin-left: 6vw;
 }
 .loai1:hover .icon1{
-    width: 24%;
+    width: 18%;
+}
+.loai1{
+    position: relative;
+}
+.tenphukien{
+    
+    /* background-color: aqua; */
+    position: absolute;
+    top: 40%;
+    left: 11vw;
+    /* text-align: center; */
 }
 a.loai1{
-    float: none;
-    color: rgb(98, 81, 192);
-    padding: 0.3vw;
-    text-decoration: none;
+    padding: 0.38vw;
     display: block;
-    font-size: 15pt;
+    text-decoration: none;
+    /* text-align: center; */
+    font-weight: bold;
+    color: rgb(98, 81, 192);
+    font-size: 1.5vw;
     font-family:'Times New Roman';
-    text-align: center;
-    margin-bottom: 0.4vw;
 }
+
 .cot a:hover {
     background-color: rgb(211, 250, 250);
-    font-size: 17pt;
+    font-size: 2vw;
     color: rgb(26, 3, 160);
 }
 .hang:after {
@@ -190,10 +208,7 @@ a.loai1{
     display: table;
     clear: both;
 }
-@media screen and (max-width: 600px) {
-    header{
-        height: 80px;
-    }
+@media screen and (max-width: 767px) {
     .cot {
       width: 100%;
       height: auto;
@@ -216,40 +231,66 @@ a.loai1{
     }
     .nav{
         width: 100%;
+        /* text-align: center; */
     }
     .nav>a {
         font-size: 8pt;
         color: rgb(7, 148, 115);
-        text-align: center;
-        padding: 0 20px;
+        padding: 0 15px;
         text-decoration: none;
         font-weight: bold;
-        float: left;
-        line-height: 80px;
+        line-height: 5vw;
     }
     .home{
-        margin-left: 28px;
+        margin-left: 33px;
     }
     .dropdown .muc {
         border: none;
         outline: none;
         color: rgb(7, 148, 115);
-        padding-top: 42%;
-        padding-bottom: 30px;
-        padding-left: 1.85vw;
-        padding-right: 1.85vw;
+        padding-top: 1.35vw;
+        padding-bottom: 1vw;
+        padding-left: 15px;
+        padding-right: 15px;
         background-color: inherit;
         font-weight: bold;
         font-size: 8pt;
     }
-    a.loai1{
-        float: none;
-        color: rgb(98, 81, 192);
-        text-decoration: none;
-        display: block;
-        font-size: 12pt;
-        font-family:'Times New Roman';
-        text-align: center;
-     
+    .tenphukien{
+        /* background-color: aqua; */
+        position: absolute;
+        top: 40%;
+        left: 48vw;
+        /* text-align: center; */
     }
+    .cot a:hover {
+        font-size: 4vw;
+    }
+    a.loai1{
+        font-size: 3vw;
+    }
+    .icon1{
+        width: 10%;
+        height: auto;
+        /* padding-right: 0.5vw; */
+        /* background-color: aqua; */
+        margin-left: 35vw;
+        text-align: none;
+    }
+    .loai1:hover .icon1{
+        width: 12%;
+    }
+    .icon{
+        width: 18%;
+        text-align: center;
+    }
+    .cot a:hover .icon{
+        width: 22%;
+    }
+    .loai{
+        text-align: center;
+        padding: 2vw;
+        float: left;
+        width: 100%;
+    } 
 }

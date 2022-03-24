@@ -8,12 +8,7 @@ function showSlidesAuto() {
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    auto = setTimeout(showSlidesAuto, 2000); // Change image every 2 seconds
-}
-function changeSlides(n) {
-    clearTimeout(auto);
-    auto = 0;
-    showSlides(slideIndex += n);
+    auto = setTimeout(showSlidesAuto, 3000); // Change image every 3 seconds
 }
 function stop() {
     clearTimeout(auto);
@@ -23,6 +18,11 @@ function play() {
     if (auto == 0) {
         showSlidesAuto();
     }
+}
+function changeSlides(n) {
+    clearTimeout(auto);
+    auto = 0;
+    showSlides(slideIndex += n);
 }
 function showSlides(n) {
     var i;
