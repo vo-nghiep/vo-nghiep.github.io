@@ -2,21 +2,25 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .banner{
     width: 100%;
     min-height: 50vw;
     position: relative;
+    top:5.1vw;
 }
 .mySlides>a>img{
     width: 100%;
-    height: 40vw;
+    height: 40.5vw;
 }
 .effect{
     animation-name: nd;
-    animation-duration: 1.8s;
+    animation-duration: 2s;
 }
 @keyframes nd {
-    from {opacity: .55} 
+    from {opacity: 0.3} 
     to {opacity: 1}
   }
 .next,.previous{
@@ -39,23 +43,29 @@
     border-radius: 3px 0 0 3px;
 }
 .previous:hover,
-.next:hover,
-.play:hover,
-.stop:hover{
+.next:hover{
     background-color: rgba(245, 192, 227, 0.8);
 }
-.play,
-.stop{
+#play,
+#stop{
+    position: absolute;
     cursor: pointer;
     width: 20px;
-    opacity: 0.6;
+    opacity: 0.5;
     font-size: 2vw;
-    padding: 3.5px 20px;
+    left: 48.08%;
+    bottom: 13.8%;
+}
+/* #stop{
+    padding-right: 23px;
+} */
+#play{
+    display: none;
 }
 .a{
     text-align: center;
     font-size: 2vw;
-    margin-top: -5%;
+    margin-top: 1vw;
     margin-bottom: 2%;
 }
 .sanpham{
@@ -67,26 +77,27 @@
 div.row{
     width: 100%;
     height: 50%;
-    margin-bottom: 5%;
+    margin-bottom: 1.5%;
 }
 .sp{
     /* border: 1px solid gray; */
     height: 100%;
-    width: calc(25% - 2px);
+    width: calc(25% - 12px);
     float: left;
     position: relative;
     text-align: center;
     text-decoration: none;
-    margin-top: 10px;
+    margin: 1px 6px;
+    background-color:rgba(193, 196, 199, 0.164);
 }
-.sp>img{
+.sp>a>img{
     max-width: 100%;
     max-height: 70%;
     margin: 0 auto;
     /* background-color: aqua; */
 }
 .sp:hover{
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 2.5px rgb(111, 144, 252);
     border-radius: 3px;
     transform: scale(1.06);
     background-color: rgb(210, 239, 252);
@@ -95,34 +106,47 @@ div.row{
     position: absolute;
     color: cornflowerblue;
     font-size: 1vw;
-    bottom: 20%;
+    bottom: 24%;
     left: 1%;
     right: 1%;
 }
 .gia{
     position: absolute;
-    bottom: 12%;
+    bottom: 18%;
     left: 1%;
     right: 1%;
     font-size: 1vw;
 }
 .buy{
     position: absolute;
-    right: 40%;
-    bottom: 1%;
-    border-radius: 5px;
-    width: 20%;
+    right: 32.5%;
+    bottom: 5%;
+    /* border-radius: 0.5vw; */
+    width: 32%;
     height: 9%;
-    outline: none;
-    box-shadow: inset -2px -2px 2px rgb(155, 154, 154);
+    /* outline: none; */
+    /* box-shadow: inset -2px -2px 2px rgb(155, 154, 154); */
     border: 1px solid lightgray;
     font-size: 1vw;
+    background-color: aliceblue;
 }
 .buy:hover{
-    background-color: rgb(76, 235, 235);
+    background-color: rgb(253, 87, 27);
+    font-weight: bold;
+    color: aliceblue;
+    border: 1px solid rgb(253, 87, 27);
 }
 @media screen and (max-width: 600px) {
     .next, .previous{
         padding: 2vw;
+    }
+    .a{
+        margin-top: 2vw;
+    }
+    .sanpham{
+        margin-bottom: 10vw;
+    }
+    .banner{
+        top: 0;
     }
 }

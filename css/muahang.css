@@ -1,0 +1,254 @@
+html{
+    scroll-behavior: smooth;
+}
+.sectionBuy{
+    width: 35%;
+    min-height: 115px;
+    margin: 6.2vw auto;
+    margin-bottom: 3vw;
+    /* background-color: aqua; */
+    border-radius: 5px;
+    box-shadow: 0 0 3px gray;
+}
+.tieuDe{
+    width: 100%;
+    height: 60px;
+    background-image: linear-gradient( rgb(124, 255, 255),white);
+    text-align: center;
+    box-shadow: inset 0 -2px 10px rgba(0, 255, 255, 0.473);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.gioHang{
+    float: left;
+    padding: 20px 0;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-left: 145px;
+    margin-right: 10px;
+    color: rgb(17, 104, 75);
+}
+.hinhCart{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 9.999px;
+}
+#gio{
+    width: 100%;
+    height: auto;
+}
+#hangHoa{
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 10px 0;
+    /* background-color: antiquewhite; */
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+}
+#hinhAnhSP{
+    float: left;
+    width: 25%;
+    height: auto;
+    /* background-color: aliceblue; */
+}
+#hinhAnhSP>img{
+    width: 70%;
+    height: auto;
+    margin-left: 30%;
+}
+#inf{
+    float: left;
+    width: 60%;
+    height: auto;
+    /* background-color: blue; */
+}
+#khong{
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+.khong{
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 15pt;
+    color: grey;
+    line-height: 50px;
+}
+.nameSP{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.price{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(253, 23, 23);
+}
+#nutxoa{
+    float: left;
+    width: 15%;
+    height: auto;
+}
+.remove{
+    margin-top: 40%;
+    margin-left: 10%;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: rgb(128, 128, 128);
+    font-size: 8pt;
+    font-weight: bold;
+    color: rgb(236, 241, 248);
+}
+.remove:hover{
+    background-color: rgb(150, 252, 252);
+    color: rgba(0, 0, 0, 0.815);
+    border: 2px solid rgba(47, 85, 253, 0.61);
+    box-shadow: 2px 2px 1px rgb(29, 31, 31);
+}
+#giam>img,#tang>img{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin:  0;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+#soluong{
+    float: left;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.tangGiam{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+#giam>img:hover,#tang>img:hover{
+    background-color: rgb(150, 252, 252);
+}
+#tongTien{
+    clear: both;
+    height: auto;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15pt;
+    font-weight: bold;
+    color: grey;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.315);
+    line-height: 26px;
+}
+#thanhToan{
+    display: none;
+}
+.tongTien2{
+    height: auto;
+    margin-bottom: 1%;
+    border-top: 1px solid rgba(128, 128, 128, 0.315);
+}
+#tongTien2,#tongTien3,#soTienGiam{
+    float: right;
+    margin-right: 6%;
+    color: rgb(2, 179, 179);
+    font-size: 15pt;
+}
+.tongTien2>p{
+    margin-top: 2%;
+    margin-left: 4.6%;
+    font-size: 13pt;
+}
+.infUser{
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    /* background-color: blueviolet; */
+}
+#loaiThongTin{
+    margin-left: 5%;
+}
+#chiTietGT{
+    margin-left: 4%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+#chiTietNH{
+    margin-left: 4%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    cursor: pointer;
+}
+#tenKH, #soDT{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 41.1%;
+    height: 30px;
+    text-align: center;
+    border: 2px solid rgba(128, 128, 128, 0.315);
+    outline: none;
+}
+#tenKH:focus, #soDT:focus, #maGiamGia:focus{
+    border: 2px solid aqua;
+}
+#giamGia{
+    margin-left: 5%;
+}
+#maGiamGia{
+    margin: 2% 5%;
+    width: 69.6%;
+    height: 30px;
+    border: 2px solid rgba(128, 128, 128, 0.315);
+    text-align: center;
+    outline: none;
+}
+#apDung{
+    padding: 8px;
+    background-color: rgba(255, 127, 80, 0.815);
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#apDung:hover{
+    color: aliceblue;
+    background-color: rgb(253, 87, 27);
+}
+.nutMua{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    /* background-color: brown; */
+}
+#datHang{
+    width: 80%;
+    font-size: 16pt;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 3% 0;
+    background-color: rgba(255, 127, 80, 0.815);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#datHang:hover{
+    background-color: rgb(253, 87, 27);
+}
+#datHang:focus,#apDung:focus{
+    background-image: linear-gradient( rgb(124, 255, 255),white);
+    box-shadow: inset 0 -2px 10px rgba(0, 255, 255, 0.473);
+    color: rgba(0, 0, 0, 0.719);
+}
+.dieuKhoan{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.DK{
+    padding: 4% 0;
+    opacity: 0.6;
+}
