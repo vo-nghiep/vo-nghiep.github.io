@@ -4,6 +4,7 @@
 }
 html{
     scroll-behavior: smooth;
+    /* background-color: black; */
 }
 .banner{
     width: 100%;
@@ -50,8 +51,6 @@ html{
 #stop{
     position: absolute;
     cursor: pointer;
-    width: 20px;
-    opacity: 0.5;
     font-size: 2vw;
     left: 48.08%;
     bottom: 13.8%;
@@ -65,14 +64,13 @@ html{
 .a{
     text-align: center;
     font-size: 2vw;
-    margin-top: 1vw;
     margin-bottom: 2%;
 }
 .sanpham{
     width: 70%;
     height: 50vw;
     margin: 0 auto;
-    /* background-color: blue; */
+    margin-bottom: 5%;
 }
 div.row{
     width: 100%;
@@ -101,6 +99,7 @@ div.row{
     border-radius: 3px;
     transform: scale(1.06);
     background-color: rgb(210, 239, 252);
+    
 }
 .ten{
     position: absolute;
@@ -131,6 +130,7 @@ div.row{
     background-color: aliceblue;
 }
 .buy:hover{
+    cursor: pointer;
     background-color: rgb(253, 87, 27);
     font-weight: bold;
     color: aliceblue;

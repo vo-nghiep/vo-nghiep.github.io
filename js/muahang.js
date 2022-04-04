@@ -33,11 +33,12 @@ function xoa(loai) {
     }
     hienThi();
     if (gioHang.length == 0) {
-        document.getElementById('tongTien').innerHTML = "Không có sản phẩm nào trong giỏ hàng 🛒";
+        document.getElementById('gio').innerHTML = '<div id="khong"><p class="khong">Không có sản phẩm nào trong giỏ hàng 🛒</p></div>';
         document.getElementById('tongTien2').innerHTML = '';
         document.getElementById('tongTien3').innerHTML = '';
         document.getElementById('soTienGiam').innerHTML = '';
         document.getElementById('thanhToan').style.display = "none";
+        document.getElementById('tongTien').innerHTML = '';
     }
 }
 // Tăng số lượng mặt hàng
@@ -73,6 +74,7 @@ function hienThi() {
     document.getElementById('gio').innerHTML = '';
     document.getElementById('tongTien').innerHTML = '';
     document.getElementById('thanhToan').style.display = "block";
+    document.getElementById('tongTien').style.display = "block";
     var giaDaFormat;
     // Hiện các mặt hàng trong giỏ hàng
     for (i = 0; i < gioHang.length; i++) {
@@ -88,7 +90,7 @@ function hienThi() {
             + '<div id="tang" onclick="tang(\'' + gioHang[i].loai + '\')"><img src="images/icon-plus.png"></div>'
             + '</div>'
             + '</div>'
-            + '<div id="nutxoa"><button class="remove" onclick="xoa(\'' + gioHang[i].loai + '\')">XÓA</button></div>'
+            + '<div id="nutxoa"><img src="images/icon-rubbish.png" class="remove" onclick="xoa(\'' + gioHang[i].loai + '\')"></div>'
             + '</div>';
     }
     // Xuất tổng tiền

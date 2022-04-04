@@ -1,12 +1,13 @@
 html{
     scroll-behavior: smooth;
+    /* background-color: rgba(0, 0, 0, 0.832); */
 }
 .sectionBuy{
     width: 35%;
     min-height: 115px;
     margin: 6.2vw auto;
     margin-bottom: 3vw;
-    /* background-color: aqua; */
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 3px gray;
 }
@@ -90,20 +91,17 @@ html{
     height: auto;
 }
 .remove{
-    margin-top: 40%;
-    margin-left: 10%;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: rgb(128, 128, 128);
-    font-size: 8pt;
-    font-weight: bold;
-    color: rgb(236, 241, 248);
+    margin-top: 30%;
+    margin-left: 6%;
+    width: 50%;
+    height: auto;
+    padding: 5px;
 }
 .remove:hover{
-    background-color: rgb(150, 252, 252);
-    color: rgba(0, 0, 0, 0.815);
-    border: 2px solid rgba(47, 85, 253, 0.61);
-    box-shadow: 2px 2px 1px rgb(29, 31, 31);
+    cursor: pointer;
+    width: 70%;
+    margin-top: 20%;
+    margin-left: 0%;
 }
 #giam>img,#tang>img{
     float: left;
