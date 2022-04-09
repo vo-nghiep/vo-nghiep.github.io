@@ -189,6 +189,20 @@ html{
 #tenKH:focus, #soDT:focus, #maGiamGia:focus{
     border: 2px solid aqua;
 }
+.thongBao{
+    font-size: 10pt;
+    margin-bottom: 10px;
+    position: relative;
+    color: red;
+}
+.text-danger{
+    position: absolute;
+    left: 13.3%;
+}
+.text-danger1{
+    position: absolute;
+    right: 12%;
+}
 #giamGia{
     margin-left: 5%;
 }
@@ -249,4 +263,10 @@ html{
 .DK{
     padding: 4% 0;
     opacity: 0.6;
+}
+@media screen and (max-width: 1200px){
+    .sectionBuy{
+        width: 460px;
+    }
+    
 }

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/muahang.css">
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/muahang.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
 </head>
 
 <body>
@@ -87,7 +89,7 @@
         </div>
     </header>
     <div id="top"></div>
-    <div class="sectionBuy">
+    <div class="sectionBuy" ng-app="b1">
         <div class="tieuDe">
             <p class="gioHang">GIỎ HÀNG CỦA BẠN</p>
             <img src="images/icon-cart.png" alt="" class="hinhCart">
@@ -98,30 +100,37 @@
             </div>
         </div>
         <div id="tongTien"></div>
-        <div id="thanhToan">
-            <div class="infUser">
-                <form action="#">
+        <div id="thanhToan" ng-controller="check">
+            <form name="frm">
+                <div class="infUser">
                     <label id="loaiThongTin">THÔNG TIN KHÁCH HÀNG</label> <br>
-                    <label id="chiTietGT"><input type="radio" id="chiTietGT" name="GT" checked> Anh</label>
-                    <label id="chiTietGT"><input type="radio" id="chiTietGT" name="GT"> Chị</label> <br>
-                    <input type="text" placeholder="Họ và tên" id="tenKH">
-                    <input type="text" placeholder="Số điện thoại" id="soDT">
+                    <label id="chiTietGT"><input type="radio" id="chiTietGT" name="GT" value="Nam" checked> Anh</label>
+                    <label id="chiTietGT"><input type="radio" id="chiTietGT" name="GT" value="Nữ"> Chị</label> <br>
+                    <input type="text" name="tenkh" ng-model="tenkh" placeholder="Họ và tên" id="tenKH" required>
+                    <input type="text" name="sdt" ng-model="sdt" placeholder="Số điện thoại" id="soDT" required> <br>
+                    <div class="thongBao">
+                        <em ng-if="frm.tenkh.$invalid" class="text-danger">Vui lòng nhập họ và tên!</em>
+                        <em ng-if="frm.sdt.$invalid" class="text-danger1">Vui lòng nhập số điện thoại!</em>
+                    </div> <br>
                     <label id="giamGia">MÃ GIẢM GIÁ</label> <br>
                     <input type="text" id="maGiamGia" placeholder="Nhập mã giảm giá">
-                    <button id="apDung">Áp dụng</button> <br>
+                    <button id="apDung">Áp dụng</button> <br> <br>
                     <label id="loaiThongTin">CÁCH THỨC NHẬN HÀNG</label> <br>
-                    <label id="chiTietNH"><input type="radio" id="chiTietNH" name="NH" checked> Giao tận nơi</label>
-                    <label id="chiTietNH"><input type="radio" id="chiTietNH" name="NH"> Nhận tại shop</label> <br>
-                </form>
-            </div>
-            <div class="tongTien2">
-                <p>Tổng tiền:<b id="tongTien2"></b></p>
-                <p>Giảm giá: <b id="soTienGiam"></b></p>
-                <p>Thanh toán: <b id="tongTien3"></b></p>
-            </div>
-            <div class="nutMua">
-                <button id="datHang">ĐẶT HÀNG</button>
-            </div>
+                    <label id="chiTietNH"><input type="radio" id="chiTietNH" name="NH" value="Giao tận nơi" checked>
+                        Giao tận nơi</label>
+                    <label id="chiTietNH"><input type="radio" id="chiTietNH" name="NH" value="Nhận tại shop"> Nhận tại
+                        shop</label> <br>
+
+                </div>
+                <div class="tongTien2">
+                    <p>Tổng tiền:<b id="tongTien2"></b></p>
+                    <p>Giảm giá: <b id="soTienGiam"></b></p>
+                    <p>Thanh toán: <b id="tongTien3"></b></p>
+                </div>
+                <div class="nutMua">
+                    <button id="datHang" ng-click="datHang()">ĐẶT HÀNG</button>
+                </div>
+            </form>
         </div>
 
         <div class="dieuKhoan">
@@ -129,7 +138,7 @@
         </div>
     </div>
     <div class="sanpham">
-        <div class="row">
+        <div class="row" id="row1">
             <div class="sp">
                 <a href=""><img src="images/iphone-12-pro-max1.png" alt=""></a>
                 <b class="ten">IPHONE 12 PRO MAX - 256GB</b> <br>
@@ -161,7 +170,7 @@
                         ngay</button></a>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="row2">
             <div class="sp">
                 <a href="samsungs22ultra.html"><img src="images/samsung s22.png" alt=""></a>
                 <b class="ten">SAMSUNG S22 ULTRA 512GB</b> <br>
@@ -203,6 +212,10 @@
             Email: nghiepdvps20385@fpt.edu.vn
         </p>
     </footer>
+    <script>
+        app = angular.module("b1", []);
+        app.controller("check", xuLy);
+    </script>
 </body>
 
 </html>

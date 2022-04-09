@@ -104,4 +104,61 @@ function hienThi() {
     document.getElementById('tongTien3').innerHTML = tongTien;
     tongTien = 0;
 }
-
+// Kiểm tra form
+function xuLy($scope) {
+    $scope.datHang = function () {
+        var hoTen = document.getElementById('tenKH').value.trim();
+        var SDT = document.getElementById('soDT').value.trim();
+        var gioiTinh = document.getElementsByName('GT');
+        var nhanHang = document.getElementsByName('NH');
+        var gender = "";
+        var nhan = "";
+        var i, temp = 0, test = 0;
+        if (hoTen == "") {
+            alert("Vui lòng nhập họ và tên của bạn!");
+            return;
+        }
+        if (isNaN(hoTen) == false) {
+            alert("Họ và tên phải là tập hợp các chữ cái!");
+            document.getElementById('tenKH').value = "";
+            return;
+        }
+        if (hoTen != "" && isNaN(hoTen) == true) {
+            test = 1;
+        }
+        if (SDT == "") {
+            alert("Vui lòng nhập số điện thoại của bạn!");
+            return;
+        }
+        if (SDT.length < 10 || SDT.length > 10 || isNaN(SDT) == true) {
+            alert("Số điện thoại phải chứa 10 chữ số!");
+            document.getElementById('soDT').value = "";
+            return;
+        }
+        if (SDT.length == 10) {
+            temp = 1;
+        }
+        for (i = 0; i < gioiTinh.length; i++) {
+            if (gioiTinh[i].checked) {
+                gender = gioiTinh[i].value;
+                break;
+            }
+        }
+        for (i = 0; i < nhanHang.length; i++) {
+            if (nhanHang[i].checked) {
+                nhan = nhanHang[i].value;
+                break;
+            }
+        }
+        if (test == 1 && temp == 1) {
+            var kq = "                                    ĐẶT HÀNG THÀNH CÔNG!"
+                + "\n\n                               + Họ và tên:  " + hoTen
+                + "\n                               + Số điện thoại:  " + SDT
+                + "\n                               + Giới tính:  " + gender
+                + "\n                               + Nơi nhận hàng:  " + nhan
+                + "\n_____________________________________________________________________________"
+                + "\n\n Chúng tôi sẽ liện hệ với bạn để xác nhận đơn đặt hàng này!"
+            alert(kq);
+        }
+    }
+}

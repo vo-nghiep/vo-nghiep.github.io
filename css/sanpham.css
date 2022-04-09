@@ -37,6 +37,9 @@ html{
     width: 70%;
     margin: 0 auto;
 }
+.review{
+    margin-top: 50px;
+}
 .one{
     font-size: 20pt;
 }
