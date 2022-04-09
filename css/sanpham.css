@@ -22,7 +22,6 @@ html{
 .video>iframe{
     width: 100%;
     height: 40vw;
-    margin: auto;
 }
 .content{
     width: 50%;
