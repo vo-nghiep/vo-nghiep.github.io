@@ -1,5 +1,18 @@
 .about{
+    margin-top: 7vw;
     width: 100%;
-    height: 1000px;
-    background-color: aqua;
+    max-height: 900px;
+    text-align: center;
+}
+.noidung{
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(49, 1, 170);
+    font-weight: bold;
+}
+.logoLH{
+    width: 20px;
+}
+.map{
+    margin: 50px 0;
 }
